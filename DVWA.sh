@@ -11,7 +11,7 @@ sudo cp -r ./DVWA/* /var/www/html
 sudo service apache2 start
 sudo chown www-data /var/www/html/hackable/uploads
 sudo chown www-data /var/www/html/config
-sudo sed -i 's/allow_url_include = Off/allow_url_include = On/' /etc/php/7.2/apache2/php.ini
+sudo sed -i 's/allow_url_include = Off/allow_url_include = On/' /etc/php/8.1/apache2/php.ini
 
 # DVWA Database Creation
 sudo mysql -e "create database dvwa"
