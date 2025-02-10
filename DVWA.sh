@@ -4,7 +4,7 @@ sudo apt install -y apache2 mariadb-server mariadb-client php php-mysqli php-gd 
 sudo apt install -y git
 
 # DVWA Download and Install
-sudo git -c clone https://github.com/digininja/DVWA.git
+sudo git clone https://github.com/digininja/DVWA.git
 sudo cp ./DVWA/config/config.inc.php.dist ./DVWA/config/config.inc.php
 sudo mkdir -p /var/www/html
 sudo cp -r ./DVWA/* /var/www/html
