@@ -19,3 +19,6 @@ sudo mysql -e "create user dvwa@localhost identified by 'p@ssw0rd'"
 sudo mysql -e "grant all on dvwa.* to dvwa@localhost"
 sudo mysql -e "flush privileges"
 sudo apachectl restart
+
+## Note
+# You must change the default Document Root directive in this file: ```/etc/apache2/sites-available/000-default.conf``` and change it to ```/var/www/html```.
