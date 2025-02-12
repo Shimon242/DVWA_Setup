@@ -20,5 +20,8 @@ sudo mysql -e "grant all on dvwa.* to dvwa@localhost"
 sudo mysql -e "flush privileges"
 sudo apachectl restart
 
+# Changing folder permissions
+sudo chown -R www-data:www-data /var/www
+
 # Note
 # You must change the default Document Root directive in this file: ```/etc/apache2/sites-available/000-default.conf``` and change it to ```/var/www/html```.
